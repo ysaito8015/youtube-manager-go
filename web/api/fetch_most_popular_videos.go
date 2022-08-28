@@ -3,7 +3,7 @@ package api
 import (
 	"context"
 	"github.com/joho/godotenv"
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	"github.com/sirupsen/logrus"
 	"github.com/valyala/fasthttp"
 	"google.golang.org/api/option"

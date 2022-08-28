@@ -4,6 +4,7 @@ go 1.19
 
 require (
 	github.com/labstack/echo v3.3.10+incompatible
+	github.com/labstack/echo/v4 v4.8.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/ysaito8015/youtube-manager-go/routes v0.0.0-00010101000000-000000000000
 )
@@ -33,10 +34,10 @@ require (
 	github.com/valyala/fasttemplate v1.2.1 // indirect
 	github.com/ysaito8015/youtube-manager-go/web/api v0.0.0-00010101000000-000000000000 // indirect
 	go.opencensus.io v0.23.0 // indirect
-	golang.org/x/crypto v0.0.0-20220817201139-bc19a97f63c8 // indirect
-	golang.org/x/net v0.0.0-20220822230855-b0a4917ee28c // indirect
+	golang.org/x/crypto v0.0.0-20220826181053-bd7e27e6170d // indirect
+	golang.org/x/net v0.0.0-20220826154423-83b083e8dc8b // indirect
 	golang.org/x/oauth2 v0.0.0-20220822191816-0ebed06d0094 // indirect
-	golang.org/x/sys v0.0.0-20220818161305-2296e01440c6 // indirect
+	golang.org/x/sys v0.0.0-20220825204002-c680a09ffe64 // indirect
 	golang.org/x/text v0.3.7 // indirect
 	google.golang.org/api v0.94.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect

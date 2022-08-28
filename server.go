@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
 	"github.com/sirupsen/logrus"
 	"github.com/ysaito8015/youtube-manager-go/routes"
 )
