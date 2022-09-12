@@ -3,7 +3,6 @@ module api
 go 1.19
 
 require (
-	github.com/joho/godotenv v1.4.0
 	github.com/labstack/echo/v4 v4.8.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/valyala/fasthttp v1.39.0

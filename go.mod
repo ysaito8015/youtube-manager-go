@@ -3,6 +3,7 @@ module github.com/ysaito8015/youtube-manager-go
 go 1.19
 
 require (
+	github.com/joho/godotenv v1.4.0
 	github.com/labstack/echo/v4 v4.8.0
 	github.com/sirupsen/logrus v1.9.0
 	github.com/ysaito8015/youtube-manager-go/routes v0.0.0-00010101000000-000000000000
@@ -25,8 +26,7 @@ require (
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/googleapis/enterprise-certificate-proxy v0.1.0 // indirect
 	github.com/googleapis/gax-go/v2 v2.4.0 // indirect
-	github.com/joho/godotenv v1.4.0 // indirect
-	github.com/klauspost/compress v1.15.9 // indirect
+	github.com/klauspost/compress v1.15.0 // indirect
 	github.com/labstack/gommon v0.3.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.16 // indirect
@@ -45,4 +45,5 @@ require (
 	google.golang.org/genproto v0.0.0-20220624142145-8cd45d7dbd1f // indirect
 	google.golang.org/grpc v1.47.0 // indirect
 	google.golang.org/protobuf v1.28.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
