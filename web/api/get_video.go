@@ -13,11 +13,14 @@ type VideoResponse struct {
 
 func GetVideo() echo.HandlerFunc {
 	return func(c echo.Context) error {
+		// c から youtube.Service を取得する
 		yts := c.Get("yts").(*youtube.Service)
 
+		// 動画 ID の取得 Line 25 で使用
 		videoId := c.Param("id")
 
 		call := yts.Videos.
+			// 書籍と表記が違う部分
 			List([]string{"id", "snippet"}).
 			Id(videoId)
 
@@ -26,6 +29,7 @@ func GetVideo() echo.HandlerFunc {
 			logrus.Fatalf("Error calling YouTube API: %v", err)
 		}
 
+		// YouTube  API からのレスポンス res を構造体に受け取る
 		v := VideoResponse{
 			VideoList: res,
 		}

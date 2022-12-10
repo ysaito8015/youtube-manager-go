@@ -9,6 +9,7 @@ func Init(e *echo.Echo) {
 	g := e.Group("/api")
 	{
 		g.GET("/popular", api.FetchMostPopularVideos())
+		// 個別のビデオ再生用のルーティング
 		g.GET("/video/:id", api.GetVideo())
 		g.GET("/related/:id", api.FetchRelatedVideos())
 	}
