@@ -13,6 +13,7 @@ func FetchRelatedVideos() echo.HandlerFunc {
 
 		videoId := c.Param("id")
 
+		// Search (*SearchService) を使用して動画の ID を RelatedToVideoId() に渡す
 		call := yts.Search.
 			List([]string{"id", "snippet"}).
 			RelatedToVideoId(videoId).

@@ -11,6 +11,7 @@ func Init(e *echo.Echo) {
 		g.GET("/popular", api.FetchMostPopularVideos())
 		// 個別のビデオ再生用のルーティング
 		g.GET("/video/:id", api.GetVideo())
+		// 関連動画のルーティング
 		g.GET("/related/:id", api.FetchRelatedVideos())
 	}
 }
