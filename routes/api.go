@@ -13,5 +13,7 @@ func Init(e *echo.Echo) {
 		g.GET("/video/:id", api.GetVideo())
 		// 関連動画のルーティング
 		g.GET("/related/:id", api.FetchRelatedVideos())
+		// 動画検索のルーティング
+		g.GET("/search", api.SearchVideos())
 	}
 }
